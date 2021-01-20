@@ -26,9 +26,9 @@ resource "aws_lb_listener_rule" "this" {
     }
 
     condition {
-        host_header {
-        values = ["${var.service}.${var.owner}.pe"]
-        }
+        path_pattern {
+          values = ["/*"]
+      }
     }
   
 }
