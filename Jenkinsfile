@@ -27,13 +27,13 @@ pipeline {
                 }
             }
         }
-        stage('Build Postman') {
-            steps {
-                script {
-                    sh "make newmantest"
-                }
-            }
-        }
+        // stage('Build Postman') {
+        //     steps {
+        //         script {
+        //             sh "make newmantest"
+        //         }
+        //     }
+        // }
         stage('Build UploadECR') {
             steps {
                 script {
