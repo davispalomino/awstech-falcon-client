@@ -9,7 +9,7 @@ from flask_cors import CORS
 patcher.patch(('requests',))
 app = Flask(__name__)
 logging.basicConfig(level=logging.DEBUG)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 xray_recorder.configure(service='falcon-dev-backend')
 logging.getLogger('aws_xray_sdk').setLevel(logging.DEBUG)
