@@ -8,6 +8,7 @@
         "s3:*",
         "ecr:*",
         "ec2:*",
+        "dynamodb:*",
         "ecs:*",
         "elasticloadbalancing:*",
         "xray:*"

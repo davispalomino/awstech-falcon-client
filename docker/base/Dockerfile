@@ -19,5 +19,4 @@ RUN apk --no-cache add bash ca-certificates libc6-compat tzdata \
     # Clean build dependancies
     && apk del --purge -r build-dependencies 
 
-
 WORKDIR /app
